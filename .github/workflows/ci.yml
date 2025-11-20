@@ -59,4 +59,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/fastapi-secure-user:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/fastapi-secure-user-m11:latest
