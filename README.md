@@ -31,6 +31,15 @@ It is built as part of **Module 10: Secure User Model, Pydantic Validation, Data
 
 ---
 
+### Calculation Model (Module 11)
+
+This module adds a `Calculation` model with fields `id`, `a`, `b`, `type`, `result`, and optional `user_id`. 
+Pydantic schemas (`CalculationCreate`, `CalculationRead`) validate the operation type (`add`, `sub`, `multiply`, `divide`) 
+and prevent division by zero. A `CalculationFactory` selects the correct strategy class for each operation. The new unit 
+and integration tests are included in `tests/test_calculation_factory.py`, `tests/test_calculation_schemas.py`, and 
+`tests/test_calculation_integration.py` and are run automatically in GitHub Actions.
+
+
 ## Tech Stack
 
 - **Language:** Python 3.12
